@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="1"
+    android:visibility="visible"
+    android:background="#010101"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:visibility="visible"
+        android:layout_weight="0.9"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="0.5"
+            android:layout_weight="0.5"
+            android:visibility="visible">
+
+            <SurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg0"
+                android:layout_weight="0.25"
+                android:visibility="visible"
+                android:layout_margin="3dp" />
+
+            <SurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg1"
+                android:layout_weight="0.25"
+                android:visibility="visible"
+                android:layout_margin="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:weightSum="0.6"
+            android:layout_weight="0.5"
+            android:showDividers="middle|beginning|end"
+            android:visibility="visible">
+
+            <SurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg2"
+                android:layout_weight="0.2"
+                android:visibility="visible"
+                android:layout_margin="3dp" />
+
+            <SurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg3"
+                android:layout_weight="0.2"
+                android:visibility="visible"
+                android:layout_margin="3dp" />
+
+            <SurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg4"
+                android:layout_weight="0.2"
+                android:visibility="visible"
+                android:layout_margin="3dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_weight="0.1" />
+
+</LinearLayout>
